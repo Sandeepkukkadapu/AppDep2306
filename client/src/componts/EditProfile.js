@@ -41,7 +41,7 @@ let reqOptions = {
         body:dataToSend,
       };
 
-let JSONData = await fetch ("http://localhost:2345/updateDetails",reqOptions);
+let JSONData = await fetch ("/updateDetails",reqOptions);
 
 let JSOData = await JSONData.json();
 

@@ -12,7 +12,7 @@ function Login() {
     let navigate = useNavigate();
 
     useEffect(()=>{
-      axios.defaults.baseURL = 'http://localhost:2345';
+      axios.defaults.baseURL = '';
       axios.defaults.headers.common['Authorization'] = localStorage.getItem("token");
       emailInputRef.current.value = localStorage.getItem("email");
    PasswordInutRef.current.value = localStorage.getItem("password");
@@ -36,7 +36,7 @@ function Login() {
         body:dataToSend,
       };
 
-      let JSONData = await fetch("http://localhost:2345/validateLogin",reqOptions);
+      let JSONData = await fetch("/validateLogin",reqOptions);
 
       let JSOData =  await JSONData.json();
 
@@ -92,7 +92,7 @@ function Login() {
         body:dataToSend
       }
 
-      let JSONData = await fetch("http://localhost:2345/validateToken",reqOptions);
+      let JSONData = await fetch("/validateToken",reqOptions);
 
       let JSOData =await JSONData.json();
 

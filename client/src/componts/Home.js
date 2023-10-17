@@ -18,7 +18,7 @@ function Home() {
         body:dataToSend
       };
 
-     let JSONData = await fetch("http://localhost:2345/deleteUser",reqOptions);
+     let JSONData = await fetch("/deleteUser",reqOptions);
 
      let JSOData = await JSONData.json();
      if(JSOData.status == "success"){
@@ -47,7 +47,7 @@ function Home() {
         }}>Delete Account</button>
 
         <h1>{loc.state.data.firstName}{loc.state.data.lastName} </h1>
-        <img src={`http://localhost:2345/${loc.state.data.profilePic}`}></img>
+        <img src={`${loc.state.data.profilePic}`}></img>
         
         
 
