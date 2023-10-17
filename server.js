@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require("node:path");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const multer = require("multer");
@@ -22,6 +23,7 @@ const storage = multer.diskStorage({
 let app = express();
 app.use(cors());
 app.use('/uploads',express.static("uploads"));
+app.use(express.static(path.join(__dirname,"./client/build")));
 
  let connectToMDB = async ()=>{
     try{  
