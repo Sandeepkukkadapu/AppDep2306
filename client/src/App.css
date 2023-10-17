@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+ form{
+  display: inline-block;
+  padding: 20px;
+  border-radius:30px ;
+  margin:5% ;
+
+  background-color: rgb(56, 118, 137); }
+ form label{
+  display: inline-block;
+  width: 120px;
+  font-size:1.22rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color:white;
+ }
+ form div{
+  margin: 18px;
+ }
+
+ button{
+  background-color: rgb(135, 170, 236);
+  font-size: 1rem;
+  border-radius: 30px;
+  box-shadow: 4px 4px 1px;
+  
+ }
+ body{
+  
+ background-color:rgb(209, 158, 158);
+ }
+ h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3rem;
+  color:wheat;
+ }
+ input{
+  opacity: 40%;
+  border-radius: 15px;
+   background-color: rgb(230, 233, 240);
+   font-size: 1rem;
+   color: rgb(1, 2, 14);
+ }
+ .profilepicpreview{
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+ }
+ a{
+  font-size: 1.3rem;
+  display: block;
+  color: azure;
+  text-decoration: none;
+
+ 
+ }
